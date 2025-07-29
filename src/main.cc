@@ -607,8 +607,8 @@ class LearnVulkanApp
 
     void create_graphics_pipeline()
     {
-        std::vector<uint8_t> vert_code = read_file("tri.vert.spv");
-        std::vector<uint8_t> frag_code = read_file("tri.frag.spv");
+        std::vector<uint8_t> vert_code = read_file("shaders/tri.vert.spv");
+        std::vector<uint8_t> frag_code = read_file("shaders/tri.frag.spv");
 
         vk::ShaderModule vert_module = create_shader_module(vert_code);
         vk::ShaderModule frag_module = create_shader_module(frag_code);
